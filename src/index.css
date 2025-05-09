@@ -1,0 +1,28 @@
+/* Global Font Settings */
+/* code {
+  font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+} */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter :wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Root Variables */
+:root {
+  --font-base: 'Lexend', sans-serif; /* Primary font family */
+  --font-second-base: 'Inter', sans-serif; /* Secondary font family */
+  --bg-color: #111; /* Background color */
+  --primary-color: #ffffff; /* Primary text color */
+  --secondary-color: #e50914; /* Secondary accent color */
+}
+
+/* Reset Default Margins and Paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures consistent box model */
+}
+
+/* Body Styling */
+body {
+  background: Black; /* Sets background color using root variable */
+}
