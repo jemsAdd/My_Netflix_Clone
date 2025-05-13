@@ -15,6 +15,7 @@
   /* Footer Icons Section */
   .footer_icons {
     /* background-color: blue; */ /* Optional background color */
+    width : 12%;
     display: flex;             /* Flexible box layout */
     flex-direction: column;    /* Stacks items vertically */
     justify-content: space-between; /* Spreads items evenly */
@@ -32,18 +33,30 @@
   
   /* Footer Data Section */
   .footer_data {
+    
     display: flex;            /* Flexible box layout */
     justify-content: space-between; /* Spreads items evenly */
   }
-  
+  .footer_data ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 12vh;
+  }
+  .footer_data ul li{
+    cursor: pointer;
+
+  }
   /* Service Code Section */
   .service_code {
     display: flex;            /* Flexible box layout */
     align-items: center;      /* Centers items vertically */
-    /* justify-content: center;  Centers items horizontally */
+    justify-content: center;  
     border: 1px solid #fff;   /* Adds a white border */
     margin: 10px 0;           /* Adds top and bottom margin for spacing */
-    cursor: pointer;          /* Changes cursor to pointer on hover */
+    cursor: pointer;   
+    width: 10%;       /* Changes cursor to pointer on hover */
   }
   
   /* Copyright Section */

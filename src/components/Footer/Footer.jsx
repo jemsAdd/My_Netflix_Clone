@@ -48,7 +48,7 @@ const Footer = () => {
           Service Code
         </div>
         <div className="copy-write">
-          © 1997-2024 Netflix, Inc.
+          © 1997-2025 Netflix, Inc.
         </div>
       </div>
     </div>
