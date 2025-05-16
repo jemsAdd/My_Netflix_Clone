@@ -1,13 +1,14 @@
 
 
 import './App.css'
+import Main from './main/Main'
 
 function App() {
   
 
   return (
     <>
-     <h1>Hello Phase 4, This is Netflix </h1>
+     <Main/>
     </>
   )
 }
