@@ -1,49 +1,71 @@
 /* Outer container for the header */
 .header_outer_container {
-    position: sticky; /* Keeps the header fixed at the top when scrolling */
-    top: 0;          /* Positions the header at the top of the viewport */
-    display: flex;   /* Enables flexible box layout */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center;    /* Centers content vertically */
-    background-color: transparent; /* Transparent background (commented out options are alternatives) */
-    height: 10vh;           /* Sets the height to 10% of the viewport height */
-    color: white;           /* Text color */
-    transition: all 0.5s ease-in; /* Smooth transition effect */
+    position: sticky; 
+    top: 0;          
+    display: flex;   
+    justify-content: center; 
+    align-items: center;    
+    background-color: transparent; 
+    height: 10vh;         
+    color: white;         
+    transition: all 0.5s ease-in; 
     z-index: 1;  
-     background-color:Black;          /* Ensures the header stays above other elements */
+     background-color:Black;         
   }
   
-  /* Black navigation background */
+ 
   .nav_black {
-    background-color: rgb(20, 20, 20); /* Dark gray background */
+    background-color: rgb(20, 20, 20); 
   }
   
   /* Main header container */
   .header_container {
-    width: 90%;             /* Width of the header container */
-    display: flex;          /* Flexible box layout */
-    justify-content: space-between; /* Spreads items evenly */
-    align-items: center;    /* Centers items vertically */
+    width: 90%;             
+    display: flex;         
+    justify-content: space-between; 
+    align-items: center;    
   }
   
   /* Left section of the header */
   .header_left ul {
-    width: 140%;           /* Adjusted width for spacing */
-    display: flex;         /* Flexible box layout */
-    justify-content: space-between; /* Spreads items evenly */
-    align-items: center;   /* Centers items vertically */
-    list-style: none;      /* Removes default bullet points */
-    cursor: pointer;       /* Changes cursor to pointer on hover */
-    /* background-color: lightblue; */ /* Optional background color */
+    width: 140%;           
+    display: flex;        
+    justify-content: space-between;
+    align-items: center;   
+    list-style: none;      
+    cursor: pointer;       
+    
   }
   
   /* Right section of the header */
   .header_right ul {
-    width: 150%;           /* Adjusted width for spacing */
-    display: flex;         /* Flexible box layout */
-    justify-content: space-around; /* Distributes items with equal spacing */
-    align-items: center;   /* Centers items vertically */
-    list-style: none;      /* Removes default bullet points */
-    cursor: pointer;       /* Changes cursor to pointer on hover */
+    width: 150%;           
+    display: flex;         
+    justify-content: space-around; 
+    align-items: center; 
+    list-style: none;     
+    cursor: pointer;      
     /* background-color: lightgreen; */ /* Optional background color */
   }
+
+  /* Resposnsive Design */
+
+  @media (max-width: 768px) {
+  .header {
+    padding: 20px 4%;
+  }
+  .header_left ul li:nth-child(n+2) {
+    display: none;
+  }
+  .header img {
+    height: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .header img {
+    height: 20px;
+  }
+  .header_right {
+    gap: 10px;
+  }
+}

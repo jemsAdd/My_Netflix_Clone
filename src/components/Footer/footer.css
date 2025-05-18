@@ -1,66 +1,66 @@
-/* Footer Outer Container */
 .footer_outer_container {
-    background-color: Black; /* Dark gray background */
-    color: gray;              /* Text color */
-    display: flex;            /* Flexible box layout */
-    justify-content: center;  /* Centers content horizontally */
-  }
-  
-  /* Inner Container for Footer Content */
-  .footer_inner_container {
-    width: 60%;               /* Adjusted width for spacing */
-    /* background-color: red; */ /* Optional background color */
-  }
-  
-  /* Footer Icons Section */
-  .footer_icons {
-    /* background-color: blue; */ /* Optional background color */
-    width : 12%;
-    display: flex;             /* Flexible box layout */
-    flex-direction: column;    /* Stacks items vertically */
-    justify-content: space-between; /* Spreads items evenly */
-    height: 12vh;             /* Sets the height to 12% of the viewport height */
-    margin-left: 10px;        /* Adds left margin for spacing */
-    color: #fff;              /* Text color */
-  }
-  
-  /* List Items in Footer Icons */
-  .footer_icons ul {
-    list-style: none;         /* Removes default bullet points */
-    display: flex;            /* Flexible box layout */
-    justify-content: space-around; /* Distributes items with equal spacing */
-  }
-  
-  /* Footer Data Section */
-  .footer_data {
-    
-    display: flex;            /* Flexible box layout */
-    justify-content: space-between; /* Spreads items evenly */
-  }
-  .footer_data ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 12vh;
-  }
-  .footer_data ul li{
-    cursor: pointer;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  color: gray;
+  height: 35vh;
+}
+.footer_inner_container {
+  width: 60%;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer_icons {
+  width: 12%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_data {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_data ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 16vh;
+}
+.footer_data ul li {
+  cursor: pointer;
+}
+.service_code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 14%;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.copy_right {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
 
+@media (max-width: 768px) {
+  .footer_icons img {
+    width: 25px;
   }
-  /* Service Code Section */
-  .service_code {
-    display: flex;            /* Flexible box layout */
-    align-items: center;      /* Centers items vertically */
-    justify-content: center;  
-    border: 1px solid #fff;   /* Adds a white border */
-    margin: 10px 0;           /* Adds top and bottom margin for spacing */
-    cursor: pointer;   
-    width: 10%;       /* Changes cursor to pointer on hover */
+  .footer_data {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:25px;
+    /* text-align: center; */
+    font-size: 14px;
   }
-  
-  /* Copyright Section */
-  .copy_write {
-    font-size: 12px;          /* Smaller font size for copyright text */
-    margin-bottom: 10px;      /* Adds bottom margin for spacing */
+  .footer_icons{
+    justify-content: center;
   }
+  .service_code{
+    width: 24%;
+    align-items: center;
+  }
+}
